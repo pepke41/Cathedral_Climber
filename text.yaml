@@ -1,11 +1,16 @@
 ---
 levels:
-  - description: |
-      It is the Thursday before spring break. You have one exam between you and your break. You're at Hillman studying, but you can hardly keep your eyes open. It's after midnight, it's time to go home. The exam is at 8 am, and  you need some rest. You walk out the doors, and start toward your apartment when you're approached by a strange man. Don't panic you think, he calls your name. "I know you don't know who I am, but I know who you are." You reach for your phone to call for help. "Don't be afraid, I need your help." You decide to listen to what he has to say, phone still in your hand just incase. "There are monsters in this world, and not just the ones you see on crime tv shows. There are monsters that lurke in this univserity. Usually they are kept at bay, by the defenders, a brave group of students who have been protecting this school for centuries, but now they have disappeared. Fortunately they didn't know about you. You are a defender, but you were never told. They needed one person unknown incase something like this happened, now you're the schools only hope. You must make your way through the cathedral, the defenders are being held at the top. You must fight them, I will guide you along the way, teaching you what I can in this short amount of time. You have powers you don't know. You can do this. Do you choose to accept your mission?"
+  - description: It is the Thursday before spring break. You have one exam between you and your break. You're at Hillman studying, but you can hardly keep your eyes open. It's after midnight, it's time to go home. The exam is at 8 am, and  you need some rest. You walk out the doors, and start toward your apartment when you're approached by a strange man. Don't panic you think, he calls your name. "I know you don't know who I am, but I know who you are." You reach for your phone to call for help. "Don't be afraid, I need your help." You decide to listen to what he has to say, phone still in your hand just incase. "There are monsters in this world, and not just the ones you see on crime tv shows. There are monsters that lurke in this univserity. Usually they are kept at bay, by the defenders, a brave group of students who have been protecting this school for centuries, but now they have disappeared. Fortunately they didn't know about you. You are a defender, but you were never told. They needed one person unknown incase something like this happened, now you're the schools only hope. You must make your way through the cathedral, the defenders are being held at the top. You must fight them, I will guide you along the way, teaching you what I can in this short amount of time. You have powers you don't know. You can do this. Do you choose to accept your mission? Do you accept or decline?"
     options:
-      - description: yes
+      - description: accept
         next_level: 1
-      - description: no
+      - description: decline
         next_level: -1
 
-
+  - description: You take a sip of your water, need to check to make sure you haven't been drinking that past three hours. Nope, just water. You decide to walk over to Cathedral to see if any of this is real. You get to the main doors, but they're locked.Do you leave, search for a key, or try the ground floor doors?
+    options:
+      - description: leave
+        next_level: -1
+      - description: search for a key
+        next_level: 2
+      - description: try the ground floor doors

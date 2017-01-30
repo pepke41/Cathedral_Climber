@@ -16,5 +16,13 @@ with open("text.yaml", 'r') as stream:
             levels.append(Level(i))
     except yaml.YAMLError as exc:
         print(exc)
-print(levels[level_index].level_description)
-
+valid_match = True
+while level_index != -1 and level_index != 'end' and valid_match:
+    level_index = int(level_index)
+    print(levels[level_index].level_description)
+    choice = raw_input()
+    valid_match = False
+    for i in levels[level_index].decisions:
+        if choice.lower() == i.choice_descript:
+            level_index = i.next_level
+            valid_match = True
