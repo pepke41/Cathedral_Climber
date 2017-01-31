@@ -1,13 +1,13 @@
 ---
 levels:
-  - description: It is the Thursday before spring break. You have one exam between you and your break. You're at Hillman studying, but you can hardly keep your eyes open. It's after midnight, it's time to go home. The exam is at 8 am, and  you need some rest. You walk out the doors, and start toward your apartment when you're approached by a strange man. Don't panic you think, he calls your name. "I know you don't know who I am, but I know who you are." You reach for your phone to call for help. "Don't be afraid, I need your help." You decide to listen to what he has to say, phone still in your hand just incase. "There are monsters in this world, and not just the ones you see on crime tv shows. There are monsters that lurke in this univserity. Usually they are kept at bay, by the defenders, a brave group of students who have been protecting this school for centuries, but now they have disappeared. Fortunately they didn't know about you. You are a defender, but you were never told. They needed one person unknown incase something like this happened, now you're the schools only hope. You must make your way through the cathedral, the defenders are being held at the top. You must fight them, I will guide you along the way, teaching you what I can in this short amount of time. You have powers you don't know. You can do this. Do you choose to accept your mission? Do you accept or decline?"
+  - description: "It is the Thursday before spring break. You have one exam between you and your break. You're at Hillman studying, but you can hardly keep your eyes open. It's after midnight, it's time to go home. The exam is at 8 am, and  you need some rest. You walk out the doors, and start toward your apartment when you're approached by a strange man. Don't panic you think, he calls your name. \"I know you don't know who I am, but I know who you are.\" You reach for your phone to call for help. \"Don't be afraid, I need your help.\" You decide to listen to what he has to say, phone still in your hand just incase. \"There are monsters in this world, and not just the ones you see on crime tv shows. There are monsters that lurke in this univserity. Usually they are kept at bay, by the defenders, a brave group of students who have been protecting this school for centuries, but now they have disappeared. Fortunately they didn't know about you. You are a defender, but you were never told. They needed one person unknown incase something like this happened, now you're the schools only hope. You must make your way through the cathedral, the defenders are being held at the top. You must fight them, I will guide you along the way, teaching you what I can in this short amount of time. You have powers you don't know. You can do this. Do you choose to accept your mission? Do you accept or decline?"
     options:
       - description: accept
         next_level: 1
       - description: decline
         next_level: -1
 
-  - description: You take a sip of your water, need to check to make sure you haven't been drinking that past three hours. Nope, just water. You decide to walk over to Cathedral to see if any of this is real. You get to the main doors, but they're locked.Do you leave, search for a key, or try the ground floor doors?
+  - description: "You take a sip of your water, need to check to make sure you haven't been drinking that past three hours. Nope, just water. You decide to walk over to Cathedral to see if any of this is real. You get to the main doors, but they're locked.Do you leave, search for a key, or try the ground floor doors?"
     options:
       - description: leave
         next_level: -1
@@ -16,19 +16,19 @@ levels:
       - description: try the ground floor doors
         next_level: 3
 
-  - description: You walk around to the back of the Cathedral, you've seen the Cathedral lawn on a Thursday night, maybe there's a key around somewhere. You see something shiny on the ground, you go to pick it up, but its not the key, its a hammer. Couldn't hurt you think, you pick it up, put it in your backpack and keep looking. As you look around, you see that the doors to Heinz Chapel are open slightly, a sign maybe? You head inside, and you notice some creepy statues, one looks almost... lifelike. It turns to you, okay are you sure you weren't drinking tonight? The statue speaks to you "I am one of the ancient guardians of the Cathedral, I sense that you are looking for a key. If you are truly the hidden defender, you will be able to answer my riddle" You nod apprehensively, guess you have nothing to lose right? "The statue speaks again: You will always find me in the past. I can be created in the prsent, but the future can never taint me. What am I?" Your ever helpful narrator gives you a hint. Answer in one word
+  - description: "You walk around to the back of the Cathedral, you've seen the Cathedral lawn on a Thursday night, maybe there's a key around somewhere. You see something shiny on the ground, you go to pick it up, but its not the key, its a hammer. Couldn't hurt you think, you pick it up, put it in your backpack and keep looking. As you look around, you see that the doors to Heinz Chapel are open slightly, a sign maybe? You head inside, and you notice some creepy statues, one looks almost... lifelike. It turns to you, okay are you sure you weren't drinking tonight? The statue speaks to you \"I am one of the ancient guardians of the Cathedral, I sense that you are looking for a key. If you are truly the hidden defender, you will be able to answer my riddle\" You nod apprehensively, guess you have nothing to lose right? \"The statue speaks again: You will always find me in the past. I can be created in the prsent, but the future can never taint me. What am I?\" Your ever helpful narrator gives you a hint. Answer in one word"
     options:
       - description: history
         next_level: 4
 
-  - description: You head down to the ground floor doors, first you try the spinning doors, no luck there, but what's this the other ground floor doors are unlocked! You push open the door and head inside. Are you ready to continue? Ready or no
+  - description: "You head down to the ground floor doors, first you try the spinning doors, no luck there, but what's this the other ground floor doors are unlocked! You push open the door and head inside. Are you ready to continue? Ready or no"
     options:
       - description: ready
         next_level: 4
       - description: no
         next_level: -1
 
-  - description: You enter the Cathedral, and know you need to get to the top. You head towards the elevator, you're not climbing all those stairs. But when you enter the grand hallway you see an all familiar sign: "Elevators down for matinence, sorry for inconveince" Inconvience your ass, you're only trying to save the world. There is a maitence man on duty 24 hours, you can try and find him or start up the stairs, and maybe grab some water first. What do you do? Maitenence man or stairway
+  - description: "You enter the Cathedral, and know you need to get to the top. You head towards the elevator, you're not climbing all those stairs. But when you enter the grand hallway you see an all familiar sign: \"Elevators down for matinence, sorry for inconveince\" Inconvience your ass, you're only trying to save the world. There is a maitence man on duty 24 hours, you can try and find him or start up the stairs, and maybe grab some water first. What do you do? Maitenence man or stairway"
     options:
       - description: maitenence man
         next_level: 5
