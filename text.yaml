@@ -34,3 +34,30 @@ levels:
         next_level: 5
       - description: stairs
         next_level: 6
+
+  - description: "You head down to the basement and hear music coming from maitenance room. You walk towards it and see one of the maitenence men. You ask him if he can help you fix one of the elevators. \"I'll help you, but first I need to finish what I'm doing now\" Alright you think lets just hurry this up. \"Oh no, I can't find my hammer, I need it to finish up what I'm doing. Have you seen it\" Yes or no"
+    options:
+      - description: yes
+        next_level: 8
+      - description: no
+        next_level: 6
+
+  - description: "You head towards the door, alright just 42 flights of the stairs to the top. You start walking up the stairs until you get to the 24th. This is getting out of hand and you are incredibly winded. You've been going to the gym, but this is too much man. You step out of the stairwell to grab a drink of water. When you see another monster. \"Funny meeting you here. Too bad you won't be passing me anytime soon. Tell you what since I'm so much smarter than you, I'll ask you a riddle and if you solve it, which I know you won't, I'll let you pass\"  Alright you think, whats the worst thing that could happen. \"What flies without wings?\" Answer with one word"
+    options:
+      - description: time
+        next_level: 7
+
+  - description: "\"No!! You have defeated me!!\" The monster runs away and drops an envelope that says \"Open at the top\", uh okay? Well you are heading to the top of the Cathedral might as well take it with you. You head back into the stairwell and keep going. Whew floor 42, through those doors is the final battle. Are your ready? Yes or no"
+    options:
+      - description: yes
+        next_level: end
+      - description: no
+        next_level: -1
+
+  - description: "You and the maitenance man head back to the elevators and after a few minutes one of them is working, you thank him and step instead. You hit floor 42, and head up. It's finally time. The elevator opens, do you head out or turn back?"
+    options:
+      - description: head out
+        next_level: end
+      - description: turn back
+        next_level: -1
+
