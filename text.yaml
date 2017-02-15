@@ -27,11 +27,11 @@ levels:
     item: hammer
     required_item: none
 
-  - description: "You head down to the ground floor doors, first you try the spinning doors, no luck there, but what's this the other ground floor doors are unlocked! You push open the door and head inside. Are you ready to continue? Ready or no"
+  - description: "You head down to the ground floor doors, first you try the spinning doors, no luck there, but what's this the other ground floor doors are unlocked! You push open the door and head inside. Are you ready to continue? Ready or not ready"
     options:
       - description: ready
         next_level: 4
-      - description: no
+      - description: not ready
         next_level: -1
     item: none
     required_item: none
@@ -40,7 +40,7 @@ levels:
     options:
       - description: maitenence man
         next_level: 5
-      - description: stairs
+      - description: stairway
         next_level: 6
     item: none
     required_item: none
@@ -61,11 +61,11 @@ levels:
     item: none
     required_item: none
 
-  - description: "\"No!! You have defeated me!!\" The monster runs away and drops an envelope that says \"Open at the top\", uh okay? Well you are heading to the top of the Cathedral might as well take it with you. You head back into the stairwell and keep going. Whew floor 42, through those doors is the final battle. Are your ready? Yes or no"
+  - description: "\"No!! You have defeated me!!\" The monster runs away and drops an envelope that says \"Open at the top\", uh okay? Well you are heading to the top of the Cathedral might as well take it with you. You head back into the stairwell and keep going. Whew floor 42, through those doors is the final battle. Are your ready or not ready?"
     options:
-      - description: yes
+      - description: ready
         next_level: end
-      - description: no
+      - description: not ready
         next_level: -1
     item: envelope
     required_item: none

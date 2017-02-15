@@ -33,9 +33,11 @@ while level_index != -1 and level_index != 'end' and valid_match:
             choice = "no hammer"
             print("You don't have the hammer in your backpack! Too bad")
     for i in levels[level_index].decisions:
+        print (i.choice_descript)
         if choice.lower() == i.choice_descript:
             level_index = i.next_level
             valid_match = True
+        print (level_index)
 
 if not valid_match or level_index == -1:
     print('GAME OVER')
