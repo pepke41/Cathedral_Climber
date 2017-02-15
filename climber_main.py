@@ -6,6 +6,7 @@ from level import PlayerChoice
 print("Hello adventurer, welcome to Cathedral Climber")
 player_name = raw_input("What is your name?\n")
 backpack = ["textbook", "pens"]
+player = Player(player_name, backpack)
 levels = []
 level_index = 0
 
@@ -22,6 +23,8 @@ while level_index != -1 and level_index != 'end' and valid_match:
     print(levels[level_index].level_description)
     choice = raw_input()
     valid_match = False
+    if levels[level_index].check_item():
+        player.add_item(levels[level_index].get_item())
     if levels[level_index].required_item == 'hammer':
         if player.check_item('hammer'):
             choice = 'hammer'
@@ -34,7 +37,7 @@ while level_index != -1 and level_index != 'end' and valid_match:
             level_index = i.next_level
             valid_match = True
 
-if valid_match == false or level_index == -1:
+if not valid_match or level_index == -1:
     print('GAME OVER')
 else:
     #if envelope give hint
