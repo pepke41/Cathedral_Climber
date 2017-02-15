@@ -6,6 +6,8 @@ levels:
         next_level: 1
       - description: decline
         next_level: -1
+    item: none
+    required_item: none
 
   - description: "You take a sip of your water, need to check to make sure you haven't been drinking that past three hours. Nope, just water. You decide to walk over to Cathedral to see if any of this is real. You get to the main doors, but they're locked.Do you leave, search for a key, or try the ground floor doors?"
     options:
@@ -15,11 +17,15 @@ levels:
         next_level: 2
       - description: try the ground floor doors
         next_level: 3
+    item: none
+    required_item: none
 
   - description: "You walk around to the back of the Cathedral, you've seen the Cathedral lawn on a Thursday night, maybe there's a key around somewhere. You see something shiny on the ground, you go to pick it up, but its not the key, its a hammer. Couldn't hurt you think, you pick it up, put it in your backpack and keep looking. As you look around, you see that the doors to Heinz Chapel are open slightly, a sign maybe? You head inside, and you notice some creepy statues, one looks almost... lifelike. It turns to you, okay are you sure you weren't drinking tonight? The statue speaks to you \"I am one of the ancient guardians of the Cathedral, I sense that you are looking for a key. If you are truly the hidden defender, you will be able to answer my riddle\" You nod apprehensively, guess you have nothing to lose right? \"The statue speaks again: You will always find me in the past. I can be created in the prsent, but the future can never taint me. What am I?\" Your ever helpful narrator gives you a hint. Answer in one word"
     options:
       - description: history
         next_level: 4
+    item: hammer
+    required_item: none
 
   - description: "You head down to the ground floor doors, first you try the spinning doors, no luck there, but what's this the other ground floor doors are unlocked! You push open the door and head inside. Are you ready to continue? Ready or no"
     options:
@@ -27,6 +33,8 @@ levels:
         next_level: 4
       - description: no
         next_level: -1
+    item: none
+    required_item: none
 
   - description: "You enter the Cathedral, and know you need to get to the top. You head towards the elevator, you're not climbing all those stairs. But when you enter the grand hallway you see an all familiar sign: \"Elevators down for matinence, sorry for inconveince\" Inconvience your ass, you're only trying to save the world. There is a maitence man on duty 24 hours, you can try and find him or start up the stairs, and maybe grab some water first. What do you do? Maitenence man or stairway"
     options:
@@ -34,18 +42,24 @@ levels:
         next_level: 5
       - description: stairs
         next_level: 6
+    item: none
+    required_item: none
 
   - description: "You head down to the basement and hear music coming from maitenance room. You walk towards it and see one of the maitenence men. You ask him if he can help you fix one of the elevators. \"I'll help you, but first I need to finish what I'm doing now\" Alright you think lets just hurry this up. \"Oh no, I can't find my hammer, I need it to finish up what I'm doing. Have you seen it\" Yes or no"
     options:
-      - description: yes
+      - description: hammer
         next_level: 8
-      - description: no
+      - description: no hammer
         next_level: 6
+    item: none
+    required_item: hammer
 
   - description: "You head towards the door, alright just 42 flights of the stairs to the top. You start walking up the stairs until you get to the 24th. This is getting out of hand and you are incredibly winded. You've been going to the gym, but this is too much man. You step out of the stairwell to grab a drink of water. When you see another monster. \"Funny meeting you here. Too bad you won't be passing me anytime soon. Tell you what since I'm so much smarter than you, I'll ask you a riddle and if you solve it, which I know you won't, I'll let you pass\"  Alright you think, whats the worst thing that could happen. \"What flies without wings?\" Answer with one word"
     options:
       - description: time
         next_level: 7
+    item: none
+    required_item: none
 
   - description: "\"No!! You have defeated me!!\" The monster runs away and drops an envelope that says \"Open at the top\", uh okay? Well you are heading to the top of the Cathedral might as well take it with you. You head back into the stairwell and keep going. Whew floor 42, through those doors is the final battle. Are your ready? Yes or no"
     options:
@@ -53,6 +67,8 @@ levels:
         next_level: end
       - description: no
         next_level: -1
+    item: envelope
+    required_item: none
 
   - description: "You and the maitenance man head back to the elevators and after a few minutes one of them is working, you thank him and step instead. You hit floor 42, and head up. It's finally time. The elevator opens, do you head out or turn back?"
     options:
@@ -60,4 +76,8 @@ levels:
         next_level: end
       - description: turn back
         next_level: -1
+    item: none
+    required_item: none
+
+
 

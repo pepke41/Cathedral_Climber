@@ -22,6 +22,13 @@ while level_index != -1 and level_index != 'end' and valid_match:
     print(levels[level_index].level_description)
     choice = raw_input()
     valid_match = False
+    if levels[level_index].required_item == 'hammer':
+        if player.check_item('hammer'):
+            choice = 'hammer'
+            print('You have the hammer!')
+        else:
+            choice = "no hammer"
+            print("You don't have the hammer in your backpack! Too bad")
     for i in levels[level_index].decisions:
         if choice.lower() == i.choice_descript:
             level_index = i.next_level
@@ -33,6 +40,8 @@ else:
     #if envelope give hint
     print('This is it. The final battle. You see a jail cell, inside are all the defencers. \"Help us!!\" You wander over to the cage and see that there is a screen with a final riddle. If you answer correctly, you will release the defenders and save the day, but if you fail, the cell will self destruct. No pressure')
     print('It is in the rock, but not in the stone; It is in the marrow, but not in the bone; It is in the bolster, but not in the bed; It is not in the living, nor yet in the dead. Answer with one word only')
+    if player.check_item('envelope'):
+        print('Wait! Before you answer. Remember that envelope you picked up? It has a hint inside. "Use only one letter')
     choice = raw_input()
     if choice.lower() == 'r':
         print('The door unlocks, you\'ve saved the day!!!')

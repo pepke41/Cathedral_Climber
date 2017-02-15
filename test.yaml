@@ -1,0 +1,20 @@
+---
+levels:
+  - description: this is a test
+    options:
+      - description: yes
+        next_level: 1
+      - description: no
+        next_level: -1
+    item: suitcase
+    required_item: none
+
+  - description: This is a second test
+    options:
+      - description: yes
+        next_level: 2
+      - description: no
+        next_level: end
+    item: none
+    required_item: hammer
+    result: test
